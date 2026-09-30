@@ -21,3 +21,10 @@ SavingsAccount::SavingsAccount(string cn, float b, float ir):BankAccount(cn,b)
 	setInterestRate(ir);
 
 }
+
+void SavingsAccount::withdraw(float a)
+{
+	BankAccount::withdraw(a + 5);
+
+
+}

@@ -16,6 +16,6 @@ public:
 
     SavingsAccount(string cn, float b, float ir);
 
-
+    void withdraw(float a);// override  
 };
 
