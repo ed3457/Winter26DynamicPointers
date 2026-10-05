@@ -26,6 +26,9 @@ int main()
 
 	portfolio[2] = new SavingsAccount("Steve Jobs", 5000, 0.04);
 
+	// change the 3rd account into a regular bank account 
+	delete portfolio[2];
+	portfolio[2] = new BankAccount("Steve Jobs", 5000);
 
 
 
@@ -40,6 +43,15 @@ int main()
 		cout<<portfolio[i]->getBalance() << endl;
 
 	}
+
+
+	// clean up memory 
+	for (int i = 0; i < 3; i++)
+	{
+		delete portfolio[i];
+
+	}
+	delete[] portfolio;
 
 }
 

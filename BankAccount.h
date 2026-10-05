@@ -15,7 +15,7 @@ public:
 	string getClientName();
 
 	void deposit(float a); 
-	void withdraw(float a); 
+	virtual void withdraw(float a); // virtual turns on dynamic/late binding 
 
 	float getBalance();
 
