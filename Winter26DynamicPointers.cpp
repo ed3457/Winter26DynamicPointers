@@ -18,7 +18,7 @@ int main()
 	//BankAccount* ba2 = sa; // is-a , a savings account is a bank account 
 
 
-	BankAccount** portfolio = new BankAccount * [3];
+	BankAccount*    *portfolio = new BankAccount* [3];
 
 	portfolio[0] = ba1;
 
