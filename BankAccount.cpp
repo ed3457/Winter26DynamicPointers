@@ -1,5 +1,6 @@
 #include "BankAccount.h"
-
+#include <iostream>
+using namespace std; 
 void BankAccount::setClientName(string cn)
 {
 	clientName = cn;
@@ -12,7 +13,10 @@ string BankAccount::getClientName()
 
 void BankAccount::deposit(float a)
 {   // TODO: add validation 
-	balance += a; 
+	if (a > 0)
+		balance += a;
+	else
+		throw 2; // raise exception 
 }
 
 void BankAccount::withdraw(float a)
